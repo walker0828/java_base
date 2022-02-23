@@ -12,5 +12,17 @@ package com.practise.heap;
  *
  */
 public class heap {
+    private  static final int DEFAULT_CAPACITY = 100;
 
+    private Comparable[] items;
+    private int currentSize;
+
+    public heap() {
+        this(DEFAULT_CAPACITY);
+    }
+
+    public heap(Comparable[] items) {
+        items = new Comparable[DEFAULT_CAPACITY];
+        this.currentSize = 0;
+    }
 }
