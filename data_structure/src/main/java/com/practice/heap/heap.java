@@ -1,4 +1,4 @@
-package com.practise.heap;
+package com.practice.heap;
 
 /**
  *  堆 就是用 数组实现的二叉树

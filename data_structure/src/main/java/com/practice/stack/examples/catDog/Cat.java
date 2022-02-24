@@ -1,4 +1,4 @@
-package com.practise.stack.examples.catDog;
+package com.practice.stack.examples.catDog;
 
 public class Cat extends Pet{
     public Cat() {

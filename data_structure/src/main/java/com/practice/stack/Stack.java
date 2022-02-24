@@ -1,4 +1,4 @@
-package com.practise.stack;
+package com.practice.stack;
 
 /**
  * 栈 先进后出，由数组构成

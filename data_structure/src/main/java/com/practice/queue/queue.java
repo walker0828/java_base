@@ -1,5 +1,6 @@
-package com.practise.queue;
+package com.practice.queue;
 
 public class queue<E> {
     Object[] items;
+
 }

@@ -1,4 +1,4 @@
-package com.practise.stack.examples;
+package com.practice.stack.examples;
 /*
  * @lc app=leetcode.cn id=232 lang=java
  *
