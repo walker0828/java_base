@@ -18,7 +18,7 @@ public class heap {
     private int currentSize;
 
     public heap() {
-        this(DEFAULT_CAPACITY);
+//        this(DEFAULT_CAPACITY);
     }
 
     public heap(Comparable[] items) {
