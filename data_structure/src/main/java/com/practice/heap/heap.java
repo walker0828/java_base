@@ -20,7 +20,7 @@ public class heap {
     public heap() {
 //        this(DEFAULT_CAPACITY);
     }
-
+    Thread
     public heap(Comparable[] items) {
         items = new Comparable[DEFAULT_CAPACITY];
         this.currentSize = 0;

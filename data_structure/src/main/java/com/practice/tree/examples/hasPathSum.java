@@ -15,6 +15,5 @@ public class hasPathSum {
         }
         return hasPathSum(root.getLeft(),targetSum - root.getLeft().getData())
                 || hasPathSum(root.getRight(),targetSum - root.getRight().getData());
-
     }
 }
