@@ -20,9 +20,51 @@ public class heap {
     public heap() {
 //        this(DEFAULT_CAPACITY);
     }
-    Thread
+
     public heap(Comparable[] items) {
         items = new Comparable[DEFAULT_CAPACITY];
         this.currentSize = 0;
+    }
+
+    public int[] heapSort(int[] array) {
+        int len = array.length;
+        buildMaxHeap(array,len);
+        for(int i = len -1 ; i> 0; i--){
+            swap(array,0,1);
+            len--;
+            heapify(array,0,len);
+        }
+        return array;
+    }
+
+    private void buildMaxHeap(int[] array ,int length) {
+        for(int i = (int) Math.floor(length/2); i >=0; i-- ) {
+            heapify(array,i,length);
+        }
+    }
+
+    private void heapify(int[] arr, int i, int len) {
+        int left = 2*i + 1;
+        int right = 2*i + 2;
+        int largest = i;
+
+        if(left < len && arr[left] > arr[len]) {
+            largest = len;
+        }
+
+        if(right < len && arr[right] > arr[len]) {
+            largest = len;
+        }
+
+        if(largest != i) {
+            swap(arr,i,largest);
+            heapify(arr,largest,len);
+        }
+    }
+
+    private void swap (int[] arr,int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }
